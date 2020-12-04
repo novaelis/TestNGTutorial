@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Listeners TestSuite">
+	<listeners>
+		<listener class-name="listenerspackage.CustomListener3" />
+	</listeners>
+	<test name="Application Test1">
+		<classes>
+			<class name="testclasses.TestNG_ListenersTest3">
+			</class>
+		</classes>
+	</test>
+	<test name="Application Test2">
+		<classes>
+			<class name="testclasses.TestNG_ListenersTest4">
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="8" parallel="methods" name="Failed suite [Preserver Enable TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="8" parallel="methods" name="Test 2(failed)">
+    <parameter name="baseURL" value="https://letskodeit.teachable.com/"/>
+    <classes>
+      <class name="testpractice.TestNG_Practice2">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="testMethod1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testpractice.TestNG_Practice2 -->
+    </classes>
+  </test> <!-- Test 2(failed) -->
+</suite> <!-- Failed suite [Preserver Enable TestSuite] -->

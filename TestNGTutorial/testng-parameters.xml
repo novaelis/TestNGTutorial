@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameters TestSuite">
+	<test name="Test 1">
+	<parameter name="browser" value="firefox"/>
+	<parameter name="platform" value="windows"/>
+	<parameter name="response" value="201, 200"/>
+		<classes>
+			<class name="testclasses.TestNG_TestParameters" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
