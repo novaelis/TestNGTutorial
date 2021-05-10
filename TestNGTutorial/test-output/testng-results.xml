@@ -1,133 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-03T15:20:10 CET" name="Listeners TestSuite" finished-at="2020-12-03T15:20:10 CET" duration-ms="71">
+  <suite started-at="2021-05-06T09:22:54 CEST" name="Regression TestSuite" finished-at="2021-05-06T09:22:54 CEST" duration-ms="27">
     <groups>
+      <group name="cars">
+        <method signature="TestNG_Grouping.testAudiA6()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" name="testAudiA6" class="testclasses.TestNG_Grouping"/>
+        <method signature="TestNG_Grouping.testBMWX6()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" name="testBMWX6" class="testclasses.TestNG_Grouping"/>
+      </group> <!-- cars -->
+      <group name="bikes">
+        <method signature="TestNG_Grouping.testHondaCBR()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" name="testHondaCBR" class="testclasses.TestNG_Grouping"/>
+        <method signature="TestNG_Grouping.testNinja()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" name="testNinja" class="testclasses.TestNG_Grouping"/>
+      </group> <!-- bikes -->
+      <group name="suv">
+        <method signature="TestNG_Grouping.testBMWX6()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" name="testBMWX6" class="testclasses.TestNG_Grouping"/>
+      </group> <!-- suv -->
+      <group name="sedan">
+        <method signature="TestNG_Grouping.testAudiA6()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" name="testAudiA6" class="testclasses.TestNG_Grouping"/>
+      </group> <!-- sedan -->
     </groups>
-    <test started-at="2020-12-03T15:20:10 CET" name="Application Test1" finished-at="2020-12-03T15:20:10 CET" duration-ms="26">
-      <class name="testclasses.TestNG_ListenersTest2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testclasses.TestNG_ListenersTest2@38c5cc4c]" started-at="2020-12-03T15:20:10 CET" name="setUp" finished-at="2020-12-03T15:20:10 CET" duration-ms="4" status="PASS">
+    <test started-at="2021-05-06T09:22:54 CEST" name="GroupsDemo" finished-at="2021-05-06T09:22:54 CEST" duration-ms="27">
+      <class name="testclasses.TestNG_Grouping">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" started-at="2021-05-06T09:22:54 CEST" name="setUp" finished-at="2021-05-06T09:22:54 CEST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMethod1()[pri:0, instance:testclasses.TestNG_ListenersTest2@38c5cc4c]" started-at="2020-12-03T15:20:10 CET" name="testMethod1" finished-at="2020-12-03T15:20:10 CET" duration-ms="4" status="PASS">
+        <test-method signature="testAudiA6()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" started-at="2021-05-06T09:22:54 CEST" name="testAudiA6" finished-at="2021-05-06T09:22:54 CEST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod2()[pri:0, instance:testclasses.TestNG_ListenersTest2@38c5cc4c]" started-at="2020-12-03T15:20:10 CET" name="testMethod2" finished-at="2020-12-03T15:20:10 CET" duration-ms="1" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at testclasses.TestNG_ListenersTest2.testMethod2(TestNG_ListenersTest2.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- testAudiA6 -->
+        <test-method signature="testBMWX6()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" started-at="2021-05-06T09:22:54 CEST" name="testBMWX6" finished-at="2021-05-06T09:22:54 CEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testclasses.TestNG_ListenersTest2@38c5cc4c]" started-at="2020-12-03T15:20:10 CET" name="cleanUp" finished-at="2020-12-03T15:20:10 CET" duration-ms="0" status="PASS">
+        </test-method> <!-- testBMWX6 -->
+        <test-method signature="testHondaCBR()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" started-at="2021-05-06T09:22:54 CEST" name="testHondaCBR" finished-at="2021-05-06T09:22:54 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHondaCBR -->
+        <test-method signature="testNinja()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" started-at="2021-05-06T09:22:54 CEST" name="testNinja" finished-at="2021-05-06T09:22:54 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNinja -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testclasses.TestNG_Grouping@27ae2fd0]" started-at="2021-05-06T09:22:54 CEST" name="cleanUp" finished-at="2021-05-06T09:22:54 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- testclasses.TestNG_ListenersTest2 -->
-    </test> <!-- Application Test1 -->
-    <test started-at="2020-12-03T15:20:10 CET" name="Application Test2" finished-at="2020-12-03T15:20:10 CET" duration-ms="4">
-      <class name="testclasses.TestNG_ListenersTest2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testclasses.TestNG_ListenersTest2@2bbf180e]" started-at="2020-12-03T15:20:10 CET" name="setUp" finished-at="2020-12-03T15:20:10 CET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testMethod1()[pri:0, instance:testclasses.TestNG_ListenersTest2@2bbf180e]" started-at="2020-12-03T15:20:10 CET" name="testMethod1" finished-at="2020-12-03T15:20:10 CET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod2()[pri:0, instance:testclasses.TestNG_ListenersTest2@2bbf180e]" started-at="2020-12-03T15:20:10 CET" name="testMethod2" finished-at="2020-12-03T15:20:10 CET" duration-ms="1" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at testclasses.TestNG_ListenersTest2.testMethod2(TestNG_ListenersTest2.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testclasses.TestNG_ListenersTest2@2bbf180e]" started-at="2020-12-03T15:20:10 CET" name="cleanUp" finished-at="2020-12-03T15:20:10 CET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- testclasses.TestNG_ListenersTest2 -->
-    </test> <!-- Application Test2 -->
-  </suite> <!-- Listeners TestSuite -->
+      </class> <!-- testclasses.TestNG_Grouping -->
+    </test> <!-- GroupsDemo -->
+  </suite> <!-- Regression TestSuite -->
 </testng-results>
