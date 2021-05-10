@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import base.BaseTestSuite;
 
 import org.testng.annotations.BeforeMethod;
-import org.junit.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
